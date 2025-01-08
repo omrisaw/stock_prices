@@ -47,7 +47,7 @@ app.get('/prices', async (req, res) => {
         const prices = await Promise.all(
             rows.map(async row => {
                 try {
-                    const response = await axios.get(`https://finnhub.io/api/v1/quote?symbol=${row.symbol}&token=YOUR_API_KEY`);
+                    const response = await axios.get(`https://finnhub.io/api/v1/quote?symbol=${row.symbol}&token=API_KEY`);
                     return { symbol: row.symbol, price: response.data.c };
                 } catch {
                     return { symbol: row.symbol, price: 'Error' };
