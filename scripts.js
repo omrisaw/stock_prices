@@ -15,7 +15,7 @@ app.use(cors());
 db.run(`CREATE TABLE stocks (symbol TEXT)`);
 
 // Finnhub API details
-const YOU_API_KEY = 'ctujh4hr01qg98tdfqe0ctujh4hr01qg98tdfqeg';
+const API_KEY = 'ctujh4hr01qg98tdfqe0ctujh4hr01qg98tdfqeg';
 const FINNHUB_URL = 'https://finnhub.io/api/v1/quote';
 
 // Get all stocks
