@@ -1,0 +1,16 @@
+{
+  "name": "stock-price-tracker",
+  "version": "1.0.0",
+  "description": "A web app for tracking real-time stock prices using finnhub.io API.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.4.0",
+    "sqlite3": "^5.1.6"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}
